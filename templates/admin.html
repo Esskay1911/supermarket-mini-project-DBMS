@@ -2,8 +2,70 @@
 <html>
 <head>
     <title>Admin</title>
+    <style>
+    	* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.add {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../static/images/pic4.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 2px;
+	align-items: center;
+	margin-right: 50px;
+
+}
+.a hover
+{
+	border-bottom: 1px solid #ff6b3f; 
+}
+.btn-box
+{
+	margin-top: 15%;
+	margin-left: 40%;
+	align-items: center;
+}
+button
+{
+	width: 150px;
+	border: 1px solid #ff6b3f;
+	color: #fff;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 25px;
+	cursor: pointer;
+	background: #ff6b3f;
+	margin-top: 15%;
+	align-items: center;
+	
+
+}
+button:hover
+{
+	background: transparent;
+}
+    </style>
+    
 </head>
 <body>
-    <a href="{{url_for('add_item')}}">Add Items</a>
+	<div class="add">
+		<div class="btn-box">
+    <a href="{{url_for('add_item')}}"><button type="button">Add Items</button></a>
+    <a href="{{url_for('edit_item')}}"><button type="button">Edit Items</button></a>
+    	</div>
+	</div>
 </body>
 </html>
